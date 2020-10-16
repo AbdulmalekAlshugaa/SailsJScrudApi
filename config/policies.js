@@ -10,6 +10,19 @@
 
 module.exports.policies = {
 
+  JobController :{
+    '*':'isLoggedIn'
+  },
+  CompanyController :{
+    '*':'isLoggedIn'
+  },
+  ApplicationController :{
+    '*':'isLoggedIn'
+  },
+  UserController :{
+    '*':true
+  },
+
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions, unless overridden.       *

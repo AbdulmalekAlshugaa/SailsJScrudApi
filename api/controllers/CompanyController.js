@@ -12,7 +12,8 @@ module.exports = {
     const results = await Company.create({
         name: params.name,
         address: params.address,
-        city: params.city
+        city: params.city,
+        user:req.user
       });
 return res.ok(results)
     }catch(err){
